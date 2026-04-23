@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11626.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsFlipForMartials", "YALsFlipForMartials\YALsFlipForMartials.csproj", "{32DC6F57-E976-1F59-A765-4B2F90C6FF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsWrestlerTweaks", "YALsWrestlerTweaks\YALsWrestlerTweaks.csproj", "{C83FFF93-BBE1-A349-6D0C-89F8A42F08C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32DC6F57-E976-1F59-A765-4B2F90C6FF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DC6F57-E976-1F59-A765-4B2F90C6FF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DC6F57-E976-1F59-A765-4B2F90C6FF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DC6F57-E976-1F59-A765-4B2F90C6FF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83FFF93-BBE1-A349-6D0C-89F8A42F08C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83FFF93-BBE1-A349-6D0C-89F8A42F08C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83FFF93-BBE1-A349-6D0C-89F8A42F08C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83FFF93-BBE1-A349-6D0C-89F8A42F08C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4D20394-DBF9-40E6-ADAC-74279141BBAE}
+	EndGlobalSection
+EndGlobal
