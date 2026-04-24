@@ -62,6 +62,11 @@ public class YALsWrestlerTweaks {
 		harmony.PatchAll();
 		//
 	}
+
+	public static async Task<bool> StrikeCreatureWithUnarmed(Creature self, Func<Creature, bool>? isValidTarget, bool allowCancel, string? allowPass, bool meleeOnly) {
+		
+		return false;
+	}
 }
 
 [HarmonyPatch(typeof(CommonAbilityEffects), nameof(CommonAbilityEffects.Grapple))]
@@ -109,7 +114,14 @@ class YALsWrestlerTweaks_Possibilities_CreateEscape {
 					+ "\nHit it with Clinch Strike?"
 				)
 			) {
-				await CommonCombatActions.StrikeAdjacentCreature(grappler, cr => cr == self);
+				if (!await YALsCombatActions.StrikeCreature(grappler,
+					cr => cr == self,
+					item => item.HasTrait(Trait.Unarmed),
+					true, null
+				)) {
+					grappler.Actions.RefundReaction();
+				}
+				//await CommonCombatActions.StrikeAdjacentCreature(grappler, cr => cr == self);
 			}
 		});
 	}

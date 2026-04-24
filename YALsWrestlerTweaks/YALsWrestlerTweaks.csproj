@@ -31,4 +31,6 @@
       <Exec Command="cmd /C del /Q &quot;$(ProjectDir)export\CustomMods\*.dll&quot;" />
     </Target>
 
+    <Import Project="..\Tools\YALsCombatActions\YALsCombatActions.projitems" Label="Shared" />
+
 </Project>

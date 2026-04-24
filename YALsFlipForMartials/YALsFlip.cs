@@ -53,10 +53,23 @@ public class YALsFlip {
 						ExpiresAt = ExpirationCondition.EphemeralAtEndOfImmediateAction,
 						BonusToDefenses = (QEffect effect, CombatAction? action, Defense defense) => {
 							return defense == Defense.AC ? new Bonus(2, BonusType.Circumstance, "Flip") : null;
-						},
+						}
+					});
+					attack.Owner.AddQEffect(new QEffect {
+						ExpiresAt = ExpirationCondition.EphemeralAtEndOfImmediateAction,
 						AfterYouTakeActionAgainstTarget = async (effect, action, defender, result) => {
 							if (action == attack && result >= CheckResult.Success && defender == self) {
-								await self.StepAsync("Flip: Step within the attacker's reach", false, true);
+								//await self.StepAsync("Flip: Step within the attacker's reach", false, true);
+								await YALsMoveActions.StrideOrStepAdvancedAsync(self,
+									"Flip: Step within the attacker's reach",
+									allowStep: true, allowStride: false,
+									allowCancel: false, allowPass: true,
+									permissibleTarget: tile => {
+										var attacker = attack.Owner;
+										var reach = attacker.Space.ActualReach;
+										return attacker.DistanceToWith10FeetException(tile) <= reach;
+									}
+								);
 							}
 						}
 					});

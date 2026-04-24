@@ -7,6 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsFlipForMartials", "YALs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsWrestlerTweaks", "YALsWrestlerTweaks\YALsWrestlerTweaks.csproj", "{C83FFF93-BBE1-A349-6D0C-89F8A42F08C6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{3F82C1E7-488E-42D9-BF06-008ECAF2144C}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\README.md = Tools\README.md
+	EndProjectSection
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "YALsMoveActions", "Tools\YALsMoveActions\YALsMoveActions.shproj", "{C1FDD0CA-74A3-4C33-8784-18C3196617AE}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "YALsCombatActions", "Tools\YALsCombatActions\YALsCombatActions.shproj", "{DDB1CC2E-EDC6-46F1-A4A8-F057240A28EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,7 +34,17 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1FDD0CA-74A3-4C33-8784-18C3196617AE} = {3F82C1E7-488E-42D9-BF06-008ECAF2144C}
+		{DDB1CC2E-EDC6-46F1-A4A8-F057240A28EC} = {3F82C1E7-488E-42D9-BF06-008ECAF2144C}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4D20394-DBF9-40E6-ADAC-74279141BBAE}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Tools\YALsMoveActions\YALsMoveActions.projitems*{32dc6f57-e976-1f59-a765-4b2f90c6ff41}*SharedItemsImports = 5
+		Tools\YALsMoveActions\YALsMoveActions.projitems*{c1fdd0ca-74a3-4c33-8784-18c3196617ae}*SharedItemsImports = 13
+		Tools\YALsCombatActions\YALsCombatActions.projitems*{c83fff93-bbe1-a349-6d0c-89f8a42f08c6}*SharedItemsImports = 5
+		Tools\YALsCombatActions\YALsCombatActions.projitems*{ddb1cc2e-edc6-46f1-a4a8-f057240a28ec}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
