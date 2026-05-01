@@ -4,7 +4,7 @@ using Dawnsbury.Modding;
 
 namespace __base;
 
-public class __baseLoader {
+public class __base {
 	[DawnsburyDaysModMainMethod]
 	public static void LoadMod() {
 		//

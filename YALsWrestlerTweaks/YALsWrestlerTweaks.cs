@@ -108,7 +108,7 @@ class YALsWrestlerTweaks_Possibilities_CreateEscape {
 		if (grappler == null || !grappler.HasEffect(YALsWrestlerTweaks.ClinchStrikeQI)) return;
 		//
 		__result.WithEffectOnEachTarget(async (spell, a, d, cr) => {
-			if (cr >= Dawnsbury.Core.Mechanics.Core.CheckResult.Success
+			if (cr >= CheckResult.Success
 				&& await grappler.AskToUseReaction(
 					$"{self.Name} has escaped your Grapple."
 					+ "\nHit it with Clinch Strike?"
