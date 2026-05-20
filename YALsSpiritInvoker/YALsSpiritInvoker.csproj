@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0-windows7.0</TargetFramework>
+        <RootNamespace>YALsSpiritInvoker</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>YALsSpiritInvoker</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Common">
+        <HintPath>$(DAWNSBURY_DAYS)\Data\Common.dll</HintPath>
+      </Reference>
+      <Reference Include="Dawnsbury Days">
+        <HintPath>$(DAWNSBURY_DAYS)\Data\Dawnsbury Days.dll</HintPath>
+      </Reference>
+      <Reference Include="MonoGame.Framework">
+        <HintPath>$(DAWNSBURY_DAYS)\Data\MonoGame.Framework.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="cmd /C copy /Y &quot;$(TargetPath)&quot; &quot;$(ProjectDir)export\CustomMods\$(TargetFileName)&quot;&#xD;&#xA;cmd /C copy /Y &quot;$(TargetPath)&quot; &quot;$(DAWNSBURY_DAYS)\CustomMods\$(TargetFileName)&quot;" />
+    </Target>
+
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+      <Exec Command="cmd /C del /Q &quot;$(ProjectDir)export\CustomMods\*.dll&quot;" />
+    </Target>
+
+</Project>
