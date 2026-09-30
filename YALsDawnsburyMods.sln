@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsSpiritInvoker", "YALsSp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsRetrainAnytime", "YALsRetrainAnytime\YALsRetrainAnytime.csproj", "{F478935C-1AF8-9EF8-FFF7-FA7461C7F435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsMightyfallKobolds", "YALsMightyfallKobolds\YALsMightyfallKobolds.csproj", "{295A447D-010C-5783-9D21-0088E9AFD887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{F478935C-1AF8-9EF8-FFF7-FA7461C7F435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F478935C-1AF8-9EF8-FFF7-FA7461C7F435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F478935C-1AF8-9EF8-FFF7-FA7461C7F435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295A447D-010C-5783-9D21-0088E9AFD887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295A447D-010C-5783-9D21-0088E9AFD887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295A447D-010C-5783-9D21-0088E9AFD887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295A447D-010C-5783-9D21-0088E9AFD887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
