@@ -55,7 +55,7 @@ public class YALsGraspingReach {
 		var feat = new TrueFeat(
 			ModManager.RegisterFeatName(ModID, Name), 1,
 			"You can extend a tangle of vines or tendrils to support your arms and extend your reach.",
-			string.Join("\n", [
+			string.Join(" ", [
 				"With an Interact action, you can change between a typical grip and extended grasp",
 				"that increases your reach by 5 feet but decreases your melee weapons' damage dice by 1 step."
 			]),
@@ -84,7 +84,7 @@ public class YALsGraspingReach {
 				});
 				return new ActionPossibility(action);
 			};
-		});
+		}).WithActionCost(1);
 		ModManager.AddFeat(feat);
 	}
 }
