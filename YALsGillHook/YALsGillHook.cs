@@ -33,7 +33,9 @@ public class YALsGillHook {
 				Trait.Polearm,
 				Trait.Reach,
 				Trait.TwoHand1d10,
-			]).WithWeaponProperties(new WeaponProperties("1d10", DamageKind.Piercing));
+			])
+			.WithMainTrait(trait)
+			.WithWeaponProperties(new WeaponProperties("1d10", DamageKind.Piercing));
 			item.StateCheckWhenWielded = (self, weapon) => {
 				self.AddQEffect(new QEffect(ExpirationCondition.Ephemeral) {
 					ProvideActionIntoPossibilitySection = (qf, section) => {
