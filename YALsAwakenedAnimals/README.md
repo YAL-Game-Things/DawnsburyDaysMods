@@ -1,10 +1,6 @@
-# YALsAwakenedAnimals
+# YAL's Awakened Animals
 
-This mod does not have a description yet.
-
-<!--
-[Source code](https://github.com/YAL-Game-Things/DawnsburyDaysMods/tree/main/YALsAwakenedAnimals)
--->
+This mod adds Awakened Animals from Howl of the Wild!
 
 ## Coverage
 
@@ -61,6 +57,10 @@ Level 5
 Level 9
 -	🟢 [Animal Summoner](https://2e.aonprd.com/Feats.aspx?ID=5314)
 -	🔵 [Full Flight](https://2e.aonprd.com/Feats.aspx?ID=5315)
+
+<!--
+[Source code](https://github.com/YAL-Game-Things/DawnsburyDaysMods/tree/main/YALsAwakenedAnimals)
+-->
 
 <!--
 🔴🟢🟡🔵🟣⚫circle
