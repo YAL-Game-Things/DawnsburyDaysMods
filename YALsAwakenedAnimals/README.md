@@ -34,8 +34,8 @@ Level 1
 	Instead increases the flying/dwelling animals' speed by 5ft
 -	🔴 [Learn by Watching](https://2e.aonprd.com/Feats.aspx?ID=5301)\
 	Follow the Expert doesn't exist in DD
--	🔴 [Natural Senses](https://2e.aonprd.com/Feats.aspx?ID=5302)\
-	Implemented but not selectable for reasons that as of yet escape me
+-	🔵 [Natural Senses](https://2e.aonprd.com/Feats.aspx?ID=5302)\
+	Vision / Scent / Echolocation
 -	🔴 [Sea Legs](https://2e.aonprd.com/Feats.aspx?ID=5303)\
 	Can't have a separate swim speed!
 -	🔵 [Take Flight](https://2e.aonprd.com/Feats.aspx?ID=5304)\
