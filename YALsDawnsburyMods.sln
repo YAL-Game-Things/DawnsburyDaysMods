@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsGillHook", "YALsGillHoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsAwakenedAnimals", "YALsAwakenedAnimals\YALsAwakenedAnimals.csproj", "{90205058-21C9-EED5-CCCF-49C0C69A5542}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YALsBlisterBomb", "YALsBlisterBomb\YALsBlisterBomb.csproj", "{6813470E-502C-1E54-CD6F-3FC229BF65F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{90205058-21C9-EED5-CCCF-49C0C69A5542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90205058-21C9-EED5-CCCF-49C0C69A5542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90205058-21C9-EED5-CCCF-49C0C69A5542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6813470E-502C-1E54-CD6F-3FC229BF65F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6813470E-502C-1E54-CD6F-3FC229BF65F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6813470E-502C-1E54-CD6F-3FC229BF65F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6813470E-502C-1E54-CD6F-3FC229BF65F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
