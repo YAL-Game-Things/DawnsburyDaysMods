@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "DD": {
+      "commandName": "Executable",
+      "executablePath": "$(DAWNSBURY_DAYS)\\Dawnsbury Days.exe",
+      "workingDirectory": "$(DAWNSBURY_DAYS)"
+    }
+  }
+}
