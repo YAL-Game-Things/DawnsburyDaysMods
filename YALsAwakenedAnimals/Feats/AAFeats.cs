@@ -67,7 +67,7 @@ public class AAFeats {
 			)
 			.WithOnSheet(sheet => {
 				sheet.AddSelectionOption(new SingleFeatSelectionOption($"{ModID}:ToothAndClaw:Attack",
-					"Additional Attack", 1,
+					"Additional Attack", -1,
 					feat => feat.HasTrait(AAAttacks.TAttack)
 				));
 			})

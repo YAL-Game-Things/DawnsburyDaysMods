@@ -54,7 +54,7 @@ public class AAAttacks {
 	}
 	public static void Grant(CalculatedCharacterSheetValues sheet) {
 		sheet.AddSelectionOption(new SingleFeatSelectionOption($"{YALsAwakenedAnimals.ModID}:Attack",
-			"Animal Attack", 0,
+			"Animal Attack", -1,
 			feat => feat.HasTrait(TAttack)
 		));
 	}

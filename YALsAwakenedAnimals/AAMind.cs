@@ -43,7 +43,7 @@ public class AAMind {
 								});
 							}
 						});
-						return new ActionPossibility(action);
+						return new ActionPossibility(action, PossibilitySize.Half);
 					}
 				});
 			}

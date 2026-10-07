@@ -101,10 +101,11 @@ public class AASenses {
 				"Choose a sense appropriate to your kind of animal.",
 				[TAnimal]
 			)
+			.WithMultipleSelection()
 			.WithOnSheet(sheet => {
 				sheet.AddSelectionOption(new SingleFeatSelectionOption(
 					$"{YALsAwakenedAnimals.ModID}:NaturalSenses:Sense",
-					"Natural Sense", 1,
+					"Natural Sense", -1,
 					feat => feat.HasTrait(TSense)
 				));
 			})
